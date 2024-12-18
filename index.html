@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TintWorks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">TINTWORKS</div>
+    <nav>
+      <a href="#home" class="sectionAnchor">Home</a>
+      <a href="#about" class="sectionAnchor" onclick="smoothScroll('#about'); return false;">About</a>
+      <a href="#services" class="sectionAnchor">Services</a>
+      <a href="#contact" class="contact-btn">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- Landing Section -->
+  <section id="home" class="landing">
+    <div class="overlay">
+      <h1>Transform your ride</h1>
+      <p>Experience the best in tinting and wrapping</p>
+      <button class="serviceButton" onclick="scrollToSection('#services')">VIEW SERVICES</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section id="about" class="about">
+    <div class="about-content">
+      <div class="text">
+        <h3 class="highlight">EXPERT TINTING SERVICES</h3>
+        <h2>Quality you can trust</h2>
+        <p>
+          At Tintworks, we specialize in transforming your vehicles and spaces with top-tier window tinting and vinyl solutions. Based in Thomasville, we offer professional vehicle window tinting, as well as residential and commercial window tinting services. Our expertise also extends to vinyl applications, as we design and install eye-catching signs and car wraps. We are committed to delivering high-quality results that enhance comfort, aesthetics, and privacy for all our customers. Experience the difference with our dedicated team today!
+        </p>
+        <a href="#contact" class="cta-link">Get in touch</a>
+      </div>
+      <div class="image">
+        <img src="tintworks-aboutpage.jpg" alt="Quality Car Service">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+<section id="services" class="services">
+  <div class="services-header">
+    <h3 class="highlight">PREMIER TINTING SOLUTIONS</h3>
+    <h2>Enhance your space with style and protection.</h2>
+  </div>
+  <div class="services-grid">
+    <!-- Service Item 1 -->
+    <div class="service-item">
+      <div class="image-wrapper">
+        <img src="services-page1.jpeg" alt="Vehicle Window Tinting">
+      </div>
+      <div class="service-text">
+        <h4>Vehicle window tinting <span>&#x2794;</span></h4>
+        <p>Enhance your driving experience with premium window tinting.</p>
+      </div>
+    </div>
+    <!-- Service Item 2 -->
+    <div class="service-item">
+      <div class="image-wrapper">
+        <img src="services-page2.jpg" alt="Residential Window Tinting">
+      </div>
+      <div class="service-text">
+        <h4>Residential window tinting <span>&#x2794;</span></h4>
+        <p>Create a serene and energy-efficient home environment.</p>
+      </div>
+    </div>
+    <!-- Service Item 3 -->
+    <div class="service-item">
+      <div class="image-wrapper">
+        <img src="services-page3.jpg" alt="Vinyl Car Wrapping">
+      </div>
+      <div class="service-text">
+        <h4>Vinyl car wrapping <span>&#x2794;</span></h4>
+        <p>Revamp your vehicle's look with eye-catching vinyl wraps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

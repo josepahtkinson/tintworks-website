@@ -1,0 +1,312 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    z-index: 1000;
+    letter-spacing: 0.07em;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 9vw;
+  }
+
+  header nav a.sectionAnchor {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #444444;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    font-weight: 550;
+    font-size: 15px;
+  }
+  
+  header nav a:hover {
+    color: #008c3b;
+    border-bottom: 2px solid #008c3b;
+  }
+
+  header nav .contact-btn {
+    color: #000; /* Black text */
+    font-weight: bold;
+    border: 2px solid #000; /* Black border for the box */
+    padding: 10px 30px;
+    border-radius: 2px;
+    margin-right: 10em;
+    text-decoration: none; /* Remove underline */
+  }
+
+  header nav .contact-btn:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text */
+    border-bottom: none; /* Ensure no green border appears */
+  }
+  
+  /* Landing Section */
+  .landing {
+    height: 90vh;
+    width: 97vw;
+    background: url('tintworks-landingpage2.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: left;
+    justify-self: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+
+  .landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.4); /* Light black overlay (30% opacity) */
+    z-index: 1; /* Ensure it’s behind the text */
+  }
+  
+  .landing .overlay {
+    /* background: rgba(0, 0, 0, 0.5); */
+    z-index: 2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 9em;
+    padding-top: 7em;
+  }
+  
+  .landing h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+  }
+  
+  .landing p {
+    font-size: 1.45rem;
+    margin-top: -.1em;
+    margin-bottom: .5em;
+  }
+  
+  .landing button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #32AA27;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .landing .overlay .serviceButton {
+    letter-spacing: 0.1em;
+    word-spacing: -0.10em;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin-top: .25em;
+  }
+  
+  .landing button:hover {
+    background: #008c3b;
+  }
+
+  /* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 9vw; /* Matches logo alignment */
+    padding-left: 10vw;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .about-content .text {
+    flex: 1;
+    padding-right: 60px;
+    margin-left: 2em;
+    margin-top: 3.25em;
+  }
+  
+  .about-content .text .highlight {
+    color: #32AA27; /* Matches green button */
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .about-content .text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: -.2em;
+    margin-bottom: .1em;
+  }
+  
+  .about-content .text p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .about-content .text .cta-link {
+    font-size: 1rem;
+    color: #32AA27;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  .about-content .text .cta-link:hover {
+    color: #008c3b;
+    border-bottom: 2px solid #008c3b;
+  }
+  
+  .about-content .image {
+    flex: 1;
+    max-width: 400px; /* Adjust the width of the image container */
+    height: 500px; /* Adjust the height of the image container */
+    overflow: hidden; /* Hides parts of the image that exceed the container dimensions */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-content .image img {
+    width: 43em; /* Ensures the image scales to fit the container's width */
+    height: auto;
+    transform: translate(-140px, -20px); /* Adjust positioning of the image within the container */
+  }
+
+  #about {
+    scroll-margin-top: 12vh; /* Matches header height to offset the scroll position */
+    margin-top: 60px; /* Optional: Add some visual spacing */
+  }
+
+  /* Services Section */
+.services {
+  padding: 50px 9vw; /* Matches spacing from other sections */
+  background: #f1f2f2; /* Light background color */
+  text-align: center;
+}
+
+.services-header {
+  margin-bottom: 30px;
+}
+
+.services-header .highlight {
+  color: #32AA27; /* Matches green from buttons */
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.services-header h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+
+.service-item {
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 325px;
+  flex: 1 1 calc(33.33% - 20px); /* Keeps three items per row */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Image Wrapper with Aspect Ratio */
+.service-item .image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Maintain 4:3 aspect ratio */
+  overflow: hidden; /* Hide excess image content */
+}
+
+.service-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop the image to fit within the aspect ratio */
+  object-position: center;
+  display: block;
+}
+
+.service-text {
+  padding: 20px;
+}
+
+.service-text h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-text h4 span {
+  font-size: 1.5rem;
+  color: #32AA27; /* Green arrow */
+}
+
+.service-text p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+  
+  
+  
