@@ -223,6 +223,26 @@
   }
 
   /* Services Section */
+  .service-item {
+    text-decoration: none; /* Remove underline for the link */
+    color: inherit; /* Inherit text color to avoid default link styling */
+    display: block; /* Makes the anchor tag wrap the entire box */
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: scale(1.04); /* Hover scaling effect */
+    cursor: pointer;
+  }
+  
+  .service-item:hover h4 {
+    color: #32AA27; /* Change the text color on hover */
+  }
+  
+  .service-item:hover svg {
+    transform: translateX(5px); /* Chevron moves to the right */
+    stroke: #32AA27; /* Chevron turns green */
+  }
 .services {
   padding: 50px 9vw; /* Matches spacing from other sections */
   background: #f1f2f2; /* Light background color */
@@ -322,6 +342,116 @@
   transition: transform 0.3s ease, stroke 0.3s ease; /* Smooth movement and color transition */
 }
 
-  
+/* VEHICLE TINTING PAGE STYLING */
+/* General Reset */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #f1f2f2; /* Matches light background */
+}
+
+/* Service Details Section */
+.service-details {
+  padding: 50px 9vw; /* Matches spacing across sections */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+  margin-left: 2em;
+}
+
+.service-details-content {
+  display: flex;
+  gap: 50px; /* Adds spacing between image and text */
+  max-width: 1200px; /* Constrains content width */
+  width: 100%;
+}
+
+/* Service Image */
+.service-image {
+  flex: 1;
+  max-width: 400px; /* Constrains the image size */
+}
+
+.service-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Matches mockup shadows */
+  margin-top: 3em;
+}
+
+.service-image-2 {
+  flex: 1;
+  max-width: 400px; /* Constrains the image size */
+}
+
+.service-image-2 img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Matches mockup shadows */
+  margin-top: 4.6em;
+}
+
+/* Service Text */
+.service-text {
+  flex: 2; /* Allows the text to occupy more space */
+}
+
+.service-text .highlight {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #32AA27; /* Matches green theme */
+  margin-bottom: 15px;
+  letter-spacing: 0.05em;
+}
+
+.service-text p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.service-text-3 {
+  flex: 2; /* Allows the text to occupy more space */
+  margin-top: -1.2em;
+}
+
+.service-text-3 .highlight {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #32AA27; /* Matches green theme */
+  margin-bottom: 15px;
+  letter-spacing: 0.05em;
+}
+
+.service-text-3 p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  padding: 16px 35px;
+  background-color: #32AA27;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  letter-spacing: .05em;
+}
+
+.cta-button:hover {
+  background-color: #008c3b; /* Slightly darker green on hover */
+}
+
   
   
