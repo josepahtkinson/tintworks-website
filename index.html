@@ -17,7 +17,7 @@
       <a href="#home" class="sectionAnchor" onclick="smoothScroll('#home'); return false;">Home</a>
       <a href="#about" class="sectionAnchor" onclick="smoothScroll('#about'); return false;">About</a>
       <a href="#services" class="sectionAnchor" onclick="smoothScroll('#services'); return false;">Services</a>
-      <a href="#contact" class="contact-btn">CONTACT</a>
+      <a href="#contact" class="contact-btn" onclick="smoothScroll('#contact'); return false;">CONTACT</a>
     </nav>
   </header>
 
@@ -104,6 +104,56 @@
         <p>Revamp your vehicle's look with eye-catching vinyl wraps.</p>
       </div>
     </a>
+  </div>
+</section>
+
+<section id="contact" class="contact-page">
+  <div class="contact-form-container">
+    <h3 class="highlight">GET IN TOUCH</h3>
+    <h1>We're here to help you shine!</h1>
+    
+    <!-- Form -->
+    <form action="https://formspree.io/f/mwpkggqd" method="POST">
+      <label for="name">Name <span class="required">*</span></label>
+      <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+      
+      <label for="email">Email address <span class="required">*</span></label>
+      <input type="email" id="email" name="email" placeholder="email@website.com" required>
+      
+      <label for="phone">Phone number <span class="required">*</span></label>
+      <input type="tel" id="phone" name="phone" placeholder="555-555-5555" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+      
+      <label>
+        <input type="checkbox" name="consent" required>
+        I allow this website to store my submission so they can respond to my inquiry. <span class="required">*</span>
+      </label>
+      
+      <button type="submit" class="submit-button">SUBMIT</button>
+    </form>
+  </div>
+
+  <!-- Contact Details -->
+  <div class="contact-details">
+    <h3>Get in touch</h3>
+    <p>📞 <a href="tel:2295519996">229-551-9996</a></p>
+    <p>📧 <a href="mailto:tintworksthomasville@gmail.com">tintworksthomasville@gmail.com</a></p>
+
+    <h3>Location</h3>
+    <p>📍 <a href="http://maps.google.com/?q=Tint Works East Jackson Street, Thomasville, GA, 31792">Thomasville, GA 31792 US</a></p>
+
+    <h3>Hours</h3>
+    <ul>
+      <li>Monday: 9:00am – 6:00pm</li>
+      <li>Tuesday: 9:00am – 6:00pm</li>
+      <li>Wednesday: 9:00am – 6:00pm</li>
+      <li>Thursday: 9:00am – 6:00pm</li>
+      <li>Friday: 9:00am – 6:00pm</li>
+      <li>Saturday: By Appointment Only</li>
+      <li>Sunday: Closed</li>
+    </ul>
   </div>
 </section>
 

@@ -243,6 +243,7 @@
     transform: translateX(5px); /* Chevron moves to the right */
     stroke: #32AA27; /* Chevron turns green */
   }
+
 .services {
   padding: 50px 9vw; /* Matches spacing from other sections */
   background: #f1f2f2; /* Light background color */
@@ -347,7 +348,6 @@
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  background: #f1f2f2; /* Matches light background */
 }
 
 /* Service Details Section */
@@ -437,7 +437,7 @@ body {
 /* Call-to-Action Button */
 .cta-button {
   display: inline-block;
-  padding: 16px 35px;
+  padding: 12px 35px;
   background-color: #32AA27;
   color: #fff;
   border: none;
@@ -453,5 +453,130 @@ body {
   background-color: #008c3b; /* Slightly darker green on hover */
 }
 
-  
-  
+/* Contact Page */
+.contact-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10vw;
+  margin-left: 2em;
+}
+
+.contact-form-container {
+  flex: 2;
+}
+
+.contact-details {
+  flex: 1;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: 600;
+  max-width: 400px; /* Limits the width for better layout */
+  display: block; /* Ensures proper wrapping */
+  line-height: 1.4; /* Adjusts spacing for readability */
+}
+
+.required {
+  color: red;
+}
+
+input,
+textarea {
+  margin-top: 3px;
+  padding: 10px;
+  border: 1px solid #353635;
+  font-size: 1rem;
+  color: #353635; /* Dark gray for input text */
+  max-width: 400px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  background: #32AA27;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 400px;
+  font-weight: 600;
+}
+
+.submit-button:hover {
+  background: #008c3b;
+}
+
+.contact-page h3 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: #32AA27;
+}
+
+.contact-page h1 {
+  font-weight: 600;
+}
+
+/* Contact Details */
+.contact-details {
+  min-width: 490px;
+  margin-right: 2em;
+  border-radius: 0px;
+  padding-left: 40px;
+}
+
+.contact-details h3 {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  color:#000;
+  font-weight:700;
+  letter-spacing: 0.02em;
+}
+
+.contact-details p,
+.contact-details ul {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #353635
+}
+
+.contact-details a {
+  color: #353635;
+}
+
+.contact-details a:hover {
+  color: #32AA27;
+}
+
+.contact-details ul {
+  list-style-type: none;
+}
+
+body.individual-page {
+  background: #f1f2f2; /* Matches the light background from services section */
+}
+
+/* Ensure Buttons Have No Underlines */
+.cta-button {
+  text-decoration: none; /* Removes underline from buttons */
+}
