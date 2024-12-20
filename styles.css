@@ -227,6 +227,7 @@
   padding: 50px 9vw; /* Matches spacing from other sections */
   background: #f1f2f2; /* Light background color */
   text-align: center;
+  padding-bottom: 90px;
 }
 
 .services-header {
@@ -258,15 +259,25 @@
 .service-item {
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 325px;
-  flex: 1 1 calc(33.33% - 20px); /* Keeps three items per row */
+  flex: 1 1 calc(33.33% - 20px);
   text-align: left;
   transition: transform 0.3s ease;
 }
 
 .service-item:hover {
-  transform: translateY(-10px);
+  transform: scale(1.04); /* Lift effect for the entire box */
+  cursor: pointer;
+}
+
+.service-item:hover h4 {
+  color: #32AA27;
+}
+
+.service-item:hover svg {
+  transform: translateX(5px); /* Moves the chevron to the right */
+  stroke: #32AA27; /* Changes chevron color to green */
 }
 
 /* Image Wrapper with Aspect Ratio */
@@ -298,15 +309,19 @@
 }
 
 .service-text h4 span {
-  font-size: 1.5rem;
-  color: #32AA27; /* Green arrow */
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease, stroke 0.3s ease; /* Smooth transitions */
 }
 
-.service-text p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.5;
+.service-text h4 svg {
+  stroke: #000; /* Original black color */
+  stroke-width: 3; /* Slightly bolder */
+  width: 22px; /* Slightly bigger */
+  height: 22px;
+  transition: transform 0.3s ease, stroke 0.3s ease; /* Smooth movement and color transition */
 }
+
   
   
   
